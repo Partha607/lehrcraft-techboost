@@ -163,13 +163,35 @@
     .planet.small{width:180px; height:180px;}
   }
   @media (max-width: 768px){
+    .nav{flex-wrap: wrap; justify-content: center;}
     .nav-links{display:none;}
-    h1{font-size:52px;}
-    .section-head h2{font-size:40px;}
+    h1{font-size:48px; margin-bottom: 16px;}
+    .section-head h2{font-size:36px;}
+    .section-head p{font-size: 18px;}
     .usp-grid, .audience-grid {grid-template-columns:1fr;}
     .timeline::before { left: 24px; }
     .step { padding: 24px 24px 24px 64px; }
     .step-marker { left: 10px; top: 28px; }
+    .hero{padding: 60px 0 40px;}
+    .section{padding: 60px 0;}
+    .planet.large{width:220px; height:220px; right: 20px;}
+    .planet.small{width:140px; height:140px; right: auto; left: 10px;}
+    .hero-art{min-height: 380px;}
+    .wrap{padding: 0 16px;}
+  }
+  @media (max-width: 480px){
+    h1{font-size: 38px;}
+    .nav-meta{flex-direction: column; width: 100%; gap: 10px;}
+    .btn{width: 100%; justify-content: center; font-size: 14px;}
+    .planet.large{width:160px; height:160px; top: 20px; right: 10px;}
+    .planet.small{width:100px; height:100px; bottom: 10px; left: 0;}
+    .hero-art{min-height: 280px;}
+    .planet .planet-label{font-size: 24px;}
+    .planet .planet-sub{font-size: 12px;}
+    .mockup-body{padding: 16px; font-size: 12px;}
+    .step h4{font-size: 22px;}
+    .concept-panel{padding: 24px;}
+    .product-image{padding: 24px;}
   }
   
   /* SCROLL TO TOP BUTTON */

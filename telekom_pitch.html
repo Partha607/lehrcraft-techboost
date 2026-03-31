@@ -145,13 +145,33 @@
     .hero-card{position:relative; left:0; bottom:0; margin-top:20px; width:100%; z-index: 10;}
   }
   @media (max-width: 768px){
+    .nav{flex-wrap: wrap; justify-content: center;}
     .nav-links, .nav-meta{display:none}
-    h1{font-size:48px}
-    .section-head h2{font-size:40px}
+    h1{font-size:48px; margin-bottom: 16px;}
+    .section-head h2{font-size:36px;}
     .hero p{font-size:20px}
     .value-grid, .schema-grid {grid-template-columns:1fr}
-    .planet.large{width:260px; height:260px;}
-    .planet.small{width:160px; height:160px;}
+    .planet.large{width:220px; height:220px; right: 20px;}
+    .planet.small{width:140px; height:140px; right: auto; left: 10px;}
+    .hero-art{min-height: 380px;}
+    .hero{padding: 50px 0 40px;}
+    .section{padding: 50px 0;}
+    .wrap{padding: 0 16px;}
+  }
+  @media (max-width: 480px){
+    h1{font-size: 38px;}
+    .nav-meta{display: flex; flex-direction: column; width: 100%; gap: 10px; align-items: center;}
+    .btn.btn-main span:first-child{padding: 14px 20px; font-size: 16px;}
+    .btn.btn-main span:last-child{width: 50px; height: 50px; font-size: 24px;}
+    .planet.large{width:160px; height:160px; top: 20px; right: 10px;}
+    .planet.small{width:100px; height:100px; bottom: 10px; left: 0;}
+    .hero-art{min-height: 280px;}
+    .planet .planet-label{font-size: 24px;}
+    .schema-box h4{font-size: 18px;}
+    .spec-card{padding: 24px;}
+    .quote-box{padding: 24px;}
+    .quote-box p{font-size: 22px;}
+    .svg-shell{padding: 16px;}
   }
 
   /* SCROLL TO TOP BUTTON */
